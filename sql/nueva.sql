@@ -27,3 +27,22 @@ contrasenia VARCHAR
     foreign key
         (idUsuario) references usuarios
         (id_usuario)) ;
+
+
+
+
+<?php
+/* Conectar a una base de datos de MySQL invocando al controlador */
+// $url = 'mysql:dbname=db_galeria;host=localhost';
+// $usuario = 'root';
+// $contraseña = '';
+define('url','mysql:dbname=id18265394_db_galeria;host=localhost');
+define('db_user','id18265394_root');
+define('db_pw','C2+$d$WmL^32cAXo');
+try {
+    $pdo = new PDO('url', 'db_user', 'db_pw' );
+    // echo "Conected";
+} 
+catch (PDOException $e) {
+    echo 'Falló la conexión: ' . $e->getMessage();
+}

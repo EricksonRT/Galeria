@@ -169,6 +169,7 @@ $lectura=$gsent->fetchAll();
                     <?php foreach ($lectura as $fotos) :?>
                     <div class="col-xs-lg-3 " id="fotos">
                         <input type="hidden" id="id_img" value="<?php echo $fotos['id_img'] ?>">
+                        <?php if ($_SESSION) :?>
                         <!-- Icono borrar -->
                         <button class="btn btn_eliminar" id="btn_eliminar"
                             style="float: right; position:relative; top:38px;"
@@ -180,6 +181,7 @@ $lectura=$gsent->fetchAll();
                             </svg>
                         </button>
                         <!-- fin btn borrar -->
+                        <?php endif?>
                         <a href="<?php echo $fotos['contenido_img'];?>" target="_blank"
                             class="text-decoration-none example-image-link" data-lightbox="example-set"
                             data-title="<?php echo $fotos['descripcion']; ?>">
@@ -293,7 +295,7 @@ $lectura=$gsent->fetchAll();
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    <script src="./js/Jquery-3.6.0.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/main.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>

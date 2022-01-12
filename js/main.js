@@ -96,7 +96,17 @@ $(document).ready(function() {
         txtOf: 'de'
     });
 });
-// function cambiarFile() {
-//     const input = document.getElementById('formFile[]');
-//     if (input.files && input.files[0])
-//         console.log("File Seleccionado : ", input.files[0]);
+
+
+// Borrar logo de 000webhost
+document.addEventListener("DOMContentLoaded", () => {
+
+        let allDivs = document.querySelectorAll("div")
+
+        allDivs[allDivs.length - 1].innerHTML = ""
+
+    })
+    // function cambiarFile() {
+    //     const input = document.getElementById('formFile[]');
+    //     if (input.files && input.files[0])
+    //         console.log("File Seleccionado : ", input.files[0]);

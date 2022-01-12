@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+body {
+    font-family: 'Arimo', sans-serif;
+}
+
+.img-header {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.d-flex {
+    overflow: auto !important;
+}
+
+
+/* img galery */
+
+.img-galery {
+    width: 150px;
+    height: 250;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* flex */
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    /* background-color: #dcdcdcb7; */
+    /* height: 50vh; */
+    height: auto;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.FlexContainer div {
+    justify-content: space-between;
+    width: 150px;
+    height: auto;
+    margin-left: 7%;
+    margin-bottom: 2%;
+    /* background-color: lightblue; */
+}
+
+
+/* titulo img */
+
+.titulo-img {
+    height: 3rem !important;
+}
+
+
+/* navbar fix */
+
+.fixed-static {
+    position: fixed !important;
+    width: 100%;
+    z-index: 2;
+}
+
+
+/* 1 */
+
+@media (min-width: 320px) {
+    .FlexContainer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: auto;
+        justify-content: space-between !important;
+    }
+    .FlexContainer div {
+        width: 90px;
+        margin-left: 5px;
+        margin-bottom: 1%;
+    }
+    .img-galery {
+        width: 100%;
+    }
+}
+
+
+/* 2 */
+
+@media (min-width: 360px) {
+    .FlexContainer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: auto;
+        justify-content: space-between !important;
+    }
+    .FlexContainer div {
+        width: 105px;
+        margin-left: 5px;
+        margin-bottom: 1%;
+    }
+    .img-galery {
+        width: 100%;
+    }
+}
+
+
+/* 3 */
+
+@media (min-width: 400px) {
+    .FlexContainer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: auto;
+        justify-content: space-between !important;
+    }
+    .FlexContainer div {
+        width: 120px;
+        margin-left: 5px;
+        margin-bottom: 1%;
+    }
+    .img-galery {
+        width: 100%;
+    }
+}
+
+
+/* 4 */
+
+@media (min-width: 450px) {
+    .FlexContainer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: auto;
+        justify-content: space-between !important;
+    }
+    .FlexContainer div {
+        width: 32%;
+        margin-left: 5px;
+        margin-bottom: 1%;
+    }
+    .img-galery {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .FlexContainer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: auto;
+    }
+    .FlexContainer div {
+        width: 43vh;
+        justify-content: space-between !important;
+    }
+    .img-galery {
+        width: 100%;
+        height: 250px;
+    }
+    .img-header {
+        height: 600px;
+    }
+}
